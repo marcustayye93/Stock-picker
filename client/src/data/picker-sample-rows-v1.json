@@ -1,0 +1,105 @@
+{
+  "banner": "Illustrative sample valuation data only. Do not use it for trading decisions.",
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "last_close": 335.92,
+      "range_low": 411.67,
+      "range_high": 555.75,
+      "gap_pct": -18.4,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "last_close": 516.17,
+      "range_low": 608.69,
+      "range_high": 821.73,
+      "gap_pct": -15.2,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "last_close": 271.22,
+      "range_low": 310.68,
+      "range_high": 419.42,
+      "gap_pct": -12.7,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "last_close": 821.58,
+      "range_low": 926.25,
+      "range_high": 1250.44,
+      "gap_pct": -11.3,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase",
+      "last_close": 343.06,
+      "range_low": 380.33,
+      "range_high": 513.45,
+      "gap_pct": -9.8,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "last_close": 160.59,
+      "range_low": 174.74,
+      "range_high": 235.9,
+      "gap_pct": -8.1,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy",
+      "last_close": 76.08,
+      "range_low": 81.37,
+      "range_high": 109.85,
+      "gap_pct": -6.5,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower",
+      "last_close": 169.03,
+      "range_low": 179.63,
+      "range_high": 242.5,
+      "gap_pct": -5.9,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "AIG",
+      "name": "American International Group",
+      "last_close": 74.17,
+      "range_low": 77.42,
+      "range_high": 104.52,
+      "gap_pct": -4.2,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell Incorporated",
+      "last_close": 465.88,
+      "range_low": 520.0,
+      "range_high": 702.0,
+      "gap_pct": -10.4,
+      "note": "Price is below the sample value range.",
+      "sample": true
+    }
+  ]
+}

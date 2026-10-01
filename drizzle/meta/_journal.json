@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790307017630,
+      "tag": "0001_initial",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790307017630,
+      "tag": "0002_create_research_workspace",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790307800959,
+      "tag": "0003_add_provenance_quality_and_alert_health",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790653634716,
+      "tag": "0004_add_weekly_technical_ideas",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790654372603,
+      "tag": "0005_add_weekly_idea_chart_history",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790664549589,
+      "tag": "0006_broaden_trade_setups_and_charts",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1790729016087,
+      "tag": "0007_add_weekly_earnings_gate",
+      "breakpoints": true
+    }
+  ]
+}

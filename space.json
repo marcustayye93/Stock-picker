@@ -1,0 +1,11 @@
+{
+  "entry": "client/dist/index.html",
+  "managedCronJobs": [
+    "stock-research-price-alerts",
+    "stock-research-weekly-ideas"
+  ],
+  "name": "Stock Research Tool",
+  "platformVersion": 24,
+  "runtime": "typescript",
+  "slug": "stock-research-tool"
+}
