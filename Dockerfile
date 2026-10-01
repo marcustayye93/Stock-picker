@@ -1,5 +1,5 @@
 # Standalone Stock Picker for Railway
-FROM oven/bun:1.3 AS build
+FROM oven/bun:1 AS build
 
 WORKDIR /app
 COPY package.json bun.lock ./
@@ -7,7 +7,7 @@ RUN bun install --frozen-lockfile
 COPY . .
 RUN bun run build
 
-FROM oven/bun:1.3-slim AS runtime
+FROM oven/bun:1-slim AS runtime
 WORKDIR /app
 
 # Production deps only
