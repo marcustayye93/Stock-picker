@@ -1,5 +1,5 @@
 import { useEffect, useId, useLayoutEffect, useMemo, useState, type PointerEvent, type ReactNode } from "react";
-import { SafeAreaTopScrim } from "@hatch/space-sdk/client";
+import { SafeAreaTopScrim } from "./safe-area";
 import { api, type ApiResponse } from "./api";
 import pipelineRaw from "./data/pipeline-universe-v1.json";
 import checklistRaw from "./data/pipeline-checklist-v1.json";
@@ -85,7 +85,6 @@ type PickerSort = "strength" | "discount";
 const pipeline = pipelineRaw as { meta: PipelineMeta; rows: PipelineRow[] };
 const allRows = pipeline.rows;
 const universeRows = allRows.filter((row) => !row.bank);
-const bankRows = allRows.filter((row) => row.bank);
 const rowByTicker = new Map(allRows.map((row) => [row.ticker, row]));
 const checklistByTicker = new Map((checklistRaw as ChecklistRow[]).map((row) => [row.ticker, row]));
 const levels = levelsRaw as Record<string, LevelStock>;
@@ -446,10 +445,6 @@ function DetailScreen({ row, watched, onBack, onAdd, onTierFilter }: { row: Pipe
 function levelCode(side: Side, rank: Rank): LevelCode { return `${side === "buy" ? "B" : "S"}${rank.slice(1)}` as LevelCode; }
 function levelMidpoint(level: PublishedLevel): number { return (level.lower + level.upper) / 2; }
 function hitRateFor(symbol: string, side: Side, rank: Rank): HitRate | undefined { return hitRates.symbols[symbol]?.[levelCode(side, rank)]; }
-function hitRateLabel(rate: HitRate | undefined, short = false): string {
-  if (!rate || rate.rate === null || rate.hits === null || rate.cases < hitRates.meta.minimum_cases) return short ? "Not enough history" : "Probability from history: Not enough history";
-  return short ? `${rate.rate}%` : `Probability from history: ${rate.rate}%, ${rate.hits} of the last ${rate.cases}`;
-}
 function ideaHitRateLabel(level: IdeaTradeLevel | null, short = false): string {
   if (!level || level.rate === null || level.hits === null || level.cases < 8) return "";
   return short ? `${level.rate}%` : `Probability from history: ${level.rate}%, ${level.hits} of the last ${level.cases}`;

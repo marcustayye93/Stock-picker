@@ -1,0 +1,8 @@
+node_modules
+.bun-cache
+data
+dist
+.git
+*.db
+*.db-journal
+.DS_Store
